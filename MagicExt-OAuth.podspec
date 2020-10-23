@@ -21,8 +21,12 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/magicLabs/magic-extension-ios-pod.git', :tag => s.version.to_s }
   s.swift_version = '5.0'
   s.ios.deployment_target = '9.0'
-  s.vendored_frameworks = "MagicExt-OAuth/MagicExt-OAuth.xcframework"
+  s.vendored_frameworks = "MagicExt-OAuth/MagicExt_OAuth.framework"
 
-  s.dependency 'MagicSDK', '1.5.0'
-  s.dependency 'CryptoSwift', '1.3.2'
+  s.dependency 'MagicSDK', '~> 2.0.0'
+
+  s.pod_target_xcconfig = {
+    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
+  }
+  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 end
