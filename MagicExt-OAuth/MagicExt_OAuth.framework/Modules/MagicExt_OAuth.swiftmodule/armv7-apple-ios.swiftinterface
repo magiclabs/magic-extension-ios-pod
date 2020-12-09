@@ -1,0 +1,102 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.3.1 (swiftlang-1200.0.41 clang-1200.0.32.8)
+// swift-module-flags: -target armv7-apple-ios9.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MagicExt_OAuth
+import AuthenticationServices
+import CryptoSwift
+import Foundation
+@_exported import MagicExt_OAuth
+import MagicSDK
+import MagicSDK_Web3
+import PromiseKit
+import SafariServices
+import Swift
+public struct OAuthConfiguration : MagicSDK.BaseConfiguration {
+  public var provider: MagicExt_OAuth.OAuthProvider
+  public var redirectURI: Swift.String
+  public var scope: [Swift.String]?
+  public var loginHint: Swift.String?
+  public init(provider: MagicExt_OAuth.OAuthProvider, redirectURI: Swift.String, scope: [Swift.String]? = nil, loginHint: Swift.String? = nil)
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+}
+public enum OAuthProvider : Swift.String, Swift.CaseIterable, Swift.Codable {
+  case GOOGLE
+  case FACEBOOK
+  case GITHUB
+  case APPLE
+  public typealias RawValue = Swift.String
+  public init?(rawValue: Swift.String)
+  public var rawValue: Swift.String {
+    get
+  }
+  public typealias AllCases = [MagicExt_OAuth.OAuthProvider]
+  public static var allCases: [MagicExt_OAuth.OAuthProvider] {
+    get
+  }
+}
+@_inheritsConvenienceInitializers public class OAuthExtension : MagicSDK.BaseModule {
+  public enum OAuthExtensionError : Swift.Error {
+    case parseSuccessURLError(url: Swift.String)
+    case unsupportedVersions
+  }
+  public func loginWithPopup(_ configuration: MagicExt_OAuth.OAuthConfiguration) -> PromiseKit.Promise<MagicExt_OAuth.OAuthResponse>
+  public func loginWithPopup(_ configuration: MagicExt_OAuth.OAuthConfiguration, response: @escaping MagicSDK.Web3ResponseCompletion<MagicExt_OAuth.OAuthResponse>)
+  @objc deinit
+  override public init(rpcProvider: MagicSDK.RpcProvider)
+}
+extension Magic {
+  public var oauth: MagicExt_OAuth.OAuthExtension {
+    get
+  }
+}
+public struct OAuthResponse : MagicSDK.MagicResponse {
+  public let oauth: MagicExt_OAuth.OauthPartialResult
+  public let magic: MagicExt_OAuth.MagicPartialResult
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+}
+public struct OauthPartialResult : Swift.Codable {
+  public let provider: Swift.String
+  public let scope: [Swift.String]
+  public let accessToken: Swift.String
+  public let userHandle: Swift.String
+  public let userInfo: MagicExt_OAuth.OpenIDConnectProfile
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+}
+public struct MagicPartialResult : Swift.Codable {
+  public let idToken: Swift.String
+  public let userMetadata: MagicSDK.UserMetadata
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+}
+public struct OpenIDConnectProfile : Swift.Codable {
+  public let name: Swift.String?
+  public let familyName: Swift.String?
+  public let givenName: Swift.String?
+  public let middleName: Swift.String?
+  public let nickname: Swift.String?
+  public let preferredUsername: Swift.String?
+  public let profile: Swift.String?
+  public let picture: Swift.String?
+  public let website: Swift.String?
+  public let gender: Swift.String?
+  public let birthdate: Swift.String?
+  public let zoneinfo: Swift.String?
+  public let locale: Swift.String?
+  public let updatedAt: Swift.Int?
+  public let email: Swift.String?
+  public let emailVerified: Swift.Bool?
+  public let phoneNumber: Swift.String?
+  public let phoneNumberVerified: Swift.Bool?
+  public let address: MagicExt_OAuth.OpenIDConnectProfile.OIDAddress?
+  public struct OIDAddress : Swift.Codable {
+    public init(from decoder: Swift.Decoder) throws
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+}
+extension MagicExt_OAuth.OAuthProvider : Swift.Equatable {}
+extension MagicExt_OAuth.OAuthProvider : Swift.Hashable {}
+extension MagicExt_OAuth.OAuthProvider : Swift.RawRepresentable {}
