@@ -26,6 +26,7 @@ public enum OAuthProvider : Swift.String, Swift.CaseIterable, Swift.Codable {
   case APPLE
   case LINKEDIN
   case BITBUCKET
+  case GITLAB
   public typealias RawValue = Swift.String
   public init?(rawValue: Swift.String)
   public var rawValue: Swift.String {
