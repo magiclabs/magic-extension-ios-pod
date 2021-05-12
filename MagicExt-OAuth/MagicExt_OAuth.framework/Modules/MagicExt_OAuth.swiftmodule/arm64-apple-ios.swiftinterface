@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)
+// swift-compiler-version: Apple Swift version 5.4 (swiftlang-1205.0.26.9 clang-1205.0.19.55)
 // swift-module-flags: -target arm64-apple-ios9.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MagicExt_OAuth
 import AuthenticationServices
 import CryptoSwift
@@ -8,6 +8,7 @@ import Foundation
 import MagicSDK
 import MagicSDK_Web3
 import PromiseKit
+import Rollbar
 import SafariServices
 import Swift
 public struct OAuthConfiguration : MagicSDK.BaseConfiguration {
@@ -16,8 +17,8 @@ public struct OAuthConfiguration : MagicSDK.BaseConfiguration {
   public var scope: [Swift.String]?
   public var loginHint: Swift.String?
   public init(provider: MagicExt_OAuth.OAuthProvider, redirectURI: Swift.String, scope: [Swift.String]? = nil, loginHint: Swift.String? = nil)
-  public init(from decoder: Swift.Decoder) throws
   public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
 }
 public enum OAuthProvider : Swift.String, Swift.CaseIterable, Swift.Codable {
   case GOOGLE
@@ -28,13 +29,13 @@ public enum OAuthProvider : Swift.String, Swift.CaseIterable, Swift.Codable {
   case BITBUCKET
   case GITLAB
   case TWITTER
-  public typealias RawValue = Swift.String
   public init?(rawValue: Swift.String)
-  public var rawValue: Swift.String {
+  public typealias AllCases = [MagicExt_OAuth.OAuthProvider]
+  public typealias RawValue = Swift.String
+  public static var allCases: [MagicExt_OAuth.OAuthProvider] {
     get
   }
-  public typealias AllCases = [MagicExt_OAuth.OAuthProvider]
-  public static var allCases: [MagicExt_OAuth.OAuthProvider] {
+  public var rawValue: Swift.String {
     get
   }
 }
@@ -42,22 +43,28 @@ public enum OAuthProvider : Swift.String, Swift.CaseIterable, Swift.Codable {
   public enum OAuthExtensionError : Swift.Error {
     case parseSuccessURLError(url: Swift.String)
     case unsupportedVersions
+    case userDeniedAccess(Swift.Error)
   }
   public func loginWithPopup(_ configuration: MagicExt_OAuth.OAuthConfiguration) -> PromiseKit.Promise<MagicExt_OAuth.OAuthResponse>
   public func loginWithPopup(_ configuration: MagicExt_OAuth.OAuthConfiguration, response: @escaping MagicSDK.Web3ResponseCompletion<MagicExt_OAuth.OAuthResponse>)
-  @objc deinit
   override public init(rpcProvider: MagicSDK.RpcProvider)
+  @objc deinit
 }
 extension Magic {
   public var oauth: MagicExt_OAuth.OAuthExtension {
     get
   }
 }
+extension Web3Response {
+  public var magicExtOAuthError: MagicExt_OAuth.OAuthExtension.OAuthExtensionError? {
+    get
+  }
+}
 public struct OAuthResponse : MagicSDK.MagicResponse {
   public let oauth: MagicExt_OAuth.OauthPartialResult
   public let magic: MagicExt_OAuth.MagicPartialResult
-  public init(from decoder: Swift.Decoder) throws
   public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
 }
 public struct OauthPartialResult : Swift.Codable {
   public let provider: Swift.String
@@ -65,14 +72,14 @@ public struct OauthPartialResult : Swift.Codable {
   public let accessToken: Swift.String
   public let userHandle: Swift.String
   public let userInfo: MagicExt_OAuth.OpenIDConnectProfile
-  public init(from decoder: Swift.Decoder) throws
   public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
 }
 public struct MagicPartialResult : Swift.Codable {
   public let idToken: Swift.String
   public let userMetadata: MagicSDK.UserMetadata
-  public init(from decoder: Swift.Decoder) throws
   public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
 }
 public struct OpenIDConnectProfile : Swift.Codable {
   public let name: Swift.String?
@@ -95,11 +102,11 @@ public struct OpenIDConnectProfile : Swift.Codable {
   public let phoneNumberVerified: Swift.Bool?
   public let address: MagicExt_OAuth.OpenIDConnectProfile.OIDAddress?
   public struct OIDAddress : Swift.Codable {
-    public init(from decoder: Swift.Decoder) throws
     public func encode(to encoder: Swift.Encoder) throws
+    public init(from decoder: Swift.Decoder) throws
   }
-  public init(from decoder: Swift.Decoder) throws
   public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
 }
 extension MagicExt_OAuth.OAuthProvider : Swift.Equatable {}
 extension MagicExt_OAuth.OAuthProvider : Swift.Hashable {}
