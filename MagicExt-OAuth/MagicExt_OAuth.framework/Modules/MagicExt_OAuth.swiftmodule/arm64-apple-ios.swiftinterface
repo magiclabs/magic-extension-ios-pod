@@ -29,6 +29,7 @@ public enum OAuthProvider : Swift.String, Swift.CaseIterable, Swift.Codable {
   case BITBUCKET
   case GITLAB
   case TWITTER
+  case DISCORD
   public init?(rawValue: Swift.String)
   public typealias AllCases = [MagicExt_OAuth.OAuthProvider]
   public typealias RawValue = Swift.String
