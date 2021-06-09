@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MagicExt-OAuth'
-  s.version          = '0.8.1'
+  s.version          = '0.9.0'
   s.summary          = 'Magic IOS Extension - OAuth'
 
   s.description      = <<-DESC
@@ -23,7 +23,7 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '9.0'
   s.vendored_frameworks = "MagicExt-OAuth/MagicExt_OAuth.framework"
 
-  s.dependency 'MagicSDK', '~> 2.2.0'
+  s.dependency 'MagicSDK', '~> 2.2'
 
   s.pod_target_xcconfig = {
     'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
