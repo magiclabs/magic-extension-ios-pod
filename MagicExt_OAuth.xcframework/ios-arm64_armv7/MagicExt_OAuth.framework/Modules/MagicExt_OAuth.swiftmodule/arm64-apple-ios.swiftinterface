@@ -45,6 +45,7 @@ public enum OAuthProvider : Swift.String, Swift.CaseIterable, Swift.Codable {
     case parseSuccessURLError(url: Swift.String)
     case unsupportedVersions
     case userDeniedAccess(Swift.Error)
+    case unableToStartPopup
   }
   public func loginWithPopup(_ configuration: MagicExt_OAuth.OAuthConfiguration) -> PromiseKit.Promise<MagicExt_OAuth.OAuthResponse>
   public func loginWithPopup(_ configuration: MagicExt_OAuth.OAuthConfiguration, response: @escaping MagicSDK.Web3ResponseCompletion<MagicExt_OAuth.OAuthResponse>)

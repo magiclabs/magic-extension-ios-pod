@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MagicExt-OAuth'
-  s.version          = '0.10.0'
+  s.version          = '0.10.1'
   s.summary          = 'Magic IOS Extension - OAuth'
 
   s.description      = <<-DESC
