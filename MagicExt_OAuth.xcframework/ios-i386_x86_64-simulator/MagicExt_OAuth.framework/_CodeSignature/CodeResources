@@ -18,19 +18,19 @@
 		</data>
 		<key>Modules/MagicExt_OAuth.swiftmodule/Project/i386-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		0f4roygf5EUH/m0UslQottWqmNo=
+		hw1D3X44hWSFJAZ5FhtQdRSs1wE=
 		</data>
 		<key>Modules/MagicExt_OAuth.swiftmodule/Project/i386.swiftsourceinfo</key>
 		<data>
-		0f4roygf5EUH/m0UslQottWqmNo=
+		hw1D3X44hWSFJAZ5FhtQdRSs1wE=
 		</data>
 		<key>Modules/MagicExt_OAuth.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		umtJ1lDbch3LgUdpcOIco524RsE=
+		52P0shlIAfqkzivo6z9aUOudVvo=
 		</data>
 		<key>Modules/MagicExt_OAuth.swiftmodule/Project/x86_64.swiftsourceinfo</key>
 		<data>
-		umtJ1lDbch3LgUdpcOIco524RsE=
+		52P0shlIAfqkzivo6z9aUOudVvo=
 		</data>
 		<key>Modules/MagicExt_OAuth.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -38,11 +38,11 @@
 		</data>
 		<key>Modules/MagicExt_OAuth.swiftmodule/i386-apple-ios-simulator.swiftinterface</key>
 		<data>
-		bjF3wShk+p4iOJHiu8Su7ZV3KUo=
+		FYrMt2IKh5IR/jkHoX9WO34zOws=
 		</data>
 		<key>Modules/MagicExt_OAuth.swiftmodule/i386-apple-ios-simulator.swiftmodule</key>
 		<data>
-		VNQAqG/J+bd1zWTQrsIbtqh2Rok=
+		39K3x6HgTIyBXPAntHpNsRUBKM8=
 		</data>
 		<key>Modules/MagicExt_OAuth.swiftmodule/i386.swiftdoc</key>
 		<data>
@@ -50,11 +50,11 @@
 		</data>
 		<key>Modules/MagicExt_OAuth.swiftmodule/i386.swiftinterface</key>
 		<data>
-		bjF3wShk+p4iOJHiu8Su7ZV3KUo=
+		FYrMt2IKh5IR/jkHoX9WO34zOws=
 		</data>
 		<key>Modules/MagicExt_OAuth.swiftmodule/i386.swiftmodule</key>
 		<data>
-		VNQAqG/J+bd1zWTQrsIbtqh2Rok=
+		39K3x6HgTIyBXPAntHpNsRUBKM8=
 		</data>
 		<key>Modules/MagicExt_OAuth.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -62,11 +62,11 @@
 		</data>
 		<key>Modules/MagicExt_OAuth.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		XyzQlItlmJO9+yDoNc7OfMXkhGE=
+		g8ZjTe9XnimisLRSCGeu0oHra/c=
 		</data>
 		<key>Modules/MagicExt_OAuth.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		sE0/w2Q0BcrK8wBcWKvQFBr5ROs=
+		MKfiwhn+XyHwzgL6Ew4sgOG26ak=
 		</data>
 		<key>Modules/MagicExt_OAuth.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -74,11 +74,11 @@
 		</data>
 		<key>Modules/MagicExt_OAuth.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		XyzQlItlmJO9+yDoNc7OfMXkhGE=
+		g8ZjTe9XnimisLRSCGeu0oHra/c=
 		</data>
 		<key>Modules/MagicExt_OAuth.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		sE0/w2Q0BcrK8wBcWKvQFBr5ROs=
+		MKfiwhn+XyHwzgL6Ew4sgOG26ak=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -113,44 +113,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			0f4roygf5EUH/m0UslQottWqmNo=
+			hw1D3X44hWSFJAZ5FhtQdRSs1wE=
 			</data>
 			<key>hash2</key>
 			<data>
-			2zLPX0kxdZqjbXVxpL3PVuiViNweSAj/XcNhzi5gSRs=
+			FHOTmibW//HspaGRZrnVQI/SRpifc5IbjONN/eMDXt0=
 			</data>
 		</dict>
 		<key>Modules/MagicExt_OAuth.swiftmodule/Project/i386.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			0f4roygf5EUH/m0UslQottWqmNo=
+			hw1D3X44hWSFJAZ5FhtQdRSs1wE=
 			</data>
 			<key>hash2</key>
 			<data>
-			2zLPX0kxdZqjbXVxpL3PVuiViNweSAj/XcNhzi5gSRs=
+			FHOTmibW//HspaGRZrnVQI/SRpifc5IbjONN/eMDXt0=
 			</data>
 		</dict>
 		<key>Modules/MagicExt_OAuth.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			umtJ1lDbch3LgUdpcOIco524RsE=
+			52P0shlIAfqkzivo6z9aUOudVvo=
 			</data>
 			<key>hash2</key>
 			<data>
-			npvQA08nJeQlDssQ5TWxTaPk4JJvWUEMgOH4jQ5nJfQ=
+			nr7/Ui3Y0ZUwukeVDGO9pADmDKDMJQRekYAYEsFjyks=
 			</data>
 		</dict>
 		<key>Modules/MagicExt_OAuth.swiftmodule/Project/x86_64.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			umtJ1lDbch3LgUdpcOIco524RsE=
+			52P0shlIAfqkzivo6z9aUOudVvo=
 			</data>
 			<key>hash2</key>
 			<data>
-			npvQA08nJeQlDssQ5TWxTaPk4JJvWUEMgOH4jQ5nJfQ=
+			nr7/Ui3Y0ZUwukeVDGO9pADmDKDMJQRekYAYEsFjyks=
 			</data>
 		</dict>
 		<key>Modules/MagicExt_OAuth.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
@@ -168,22 +168,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			bjF3wShk+p4iOJHiu8Su7ZV3KUo=
+			FYrMt2IKh5IR/jkHoX9WO34zOws=
 			</data>
 			<key>hash2</key>
 			<data>
-			r+ZzDonj8WnX9/qgmAjpPVQt9cO20lM4WXp1eFSvRpw=
+			KrvOwDHk9s0Pfa1HnYnoed9Sp8RGhWPYtTvLHla5xjA=
 			</data>
 		</dict>
 		<key>Modules/MagicExt_OAuth.swiftmodule/i386-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			VNQAqG/J+bd1zWTQrsIbtqh2Rok=
+			39K3x6HgTIyBXPAntHpNsRUBKM8=
 			</data>
 			<key>hash2</key>
 			<data>
-			eEuKRE/k5+sy/NRJWZgu4Vi+BwohfAmYbW6jL0eY0pM=
+			jGrU5fkLaaYp1aDQ1XD8BVlXtFCagdGBP+pP5GyMyBo=
 			</data>
 		</dict>
 		<key>Modules/MagicExt_OAuth.swiftmodule/i386.swiftdoc</key>
@@ -201,22 +201,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			bjF3wShk+p4iOJHiu8Su7ZV3KUo=
+			FYrMt2IKh5IR/jkHoX9WO34zOws=
 			</data>
 			<key>hash2</key>
 			<data>
-			r+ZzDonj8WnX9/qgmAjpPVQt9cO20lM4WXp1eFSvRpw=
+			KrvOwDHk9s0Pfa1HnYnoed9Sp8RGhWPYtTvLHla5xjA=
 			</data>
 		</dict>
 		<key>Modules/MagicExt_OAuth.swiftmodule/i386.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			VNQAqG/J+bd1zWTQrsIbtqh2Rok=
+			39K3x6HgTIyBXPAntHpNsRUBKM8=
 			</data>
 			<key>hash2</key>
 			<data>
-			eEuKRE/k5+sy/NRJWZgu4Vi+BwohfAmYbW6jL0eY0pM=
+			jGrU5fkLaaYp1aDQ1XD8BVlXtFCagdGBP+pP5GyMyBo=
 			</data>
 		</dict>
 		<key>Modules/MagicExt_OAuth.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -234,22 +234,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			XyzQlItlmJO9+yDoNc7OfMXkhGE=
+			g8ZjTe9XnimisLRSCGeu0oHra/c=
 			</data>
 			<key>hash2</key>
 			<data>
-			MhIvrs1PXpyZdTnTlRONXv0kTT9T/SSxLEasOKMa9yY=
+			XkDSLNoMNSb6jxA1c+ZiBUwlm0c3idkCvVEdVGg+S2Y=
 			</data>
 		</dict>
 		<key>Modules/MagicExt_OAuth.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			sE0/w2Q0BcrK8wBcWKvQFBr5ROs=
+			MKfiwhn+XyHwzgL6Ew4sgOG26ak=
 			</data>
 			<key>hash2</key>
 			<data>
-			xsgphKVjU4FlEDKBlS+rCBXCKyetVl1UivMGDCKlOFQ=
+			dfD9y8wiNCR7y6WGgDb42RoLg3PyfxWmFpB4FKon5B8=
 			</data>
 		</dict>
 		<key>Modules/MagicExt_OAuth.swiftmodule/x86_64.swiftdoc</key>
@@ -267,22 +267,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			XyzQlItlmJO9+yDoNc7OfMXkhGE=
+			g8ZjTe9XnimisLRSCGeu0oHra/c=
 			</data>
 			<key>hash2</key>
 			<data>
-			MhIvrs1PXpyZdTnTlRONXv0kTT9T/SSxLEasOKMa9yY=
+			XkDSLNoMNSb6jxA1c+ZiBUwlm0c3idkCvVEdVGg+S2Y=
 			</data>
 		</dict>
 		<key>Modules/MagicExt_OAuth.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			sE0/w2Q0BcrK8wBcWKvQFBr5ROs=
+			MKfiwhn+XyHwzgL6Ew4sgOG26ak=
 			</data>
 			<key>hash2</key>
 			<data>
-			xsgphKVjU4FlEDKBlS+rCBXCKyetVl1UivMGDCKlOFQ=
+			dfD9y8wiNCR7y6WGgDb42RoLg3PyfxWmFpB4FKon5B8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
