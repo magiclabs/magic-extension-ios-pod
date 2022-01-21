@@ -1,3 +1,6 @@
+This repo has been deprecated. Please refer to the new open [source repo](https://github.com/magiclabs/magic-ios-ext)
+---
+
 # MagicExt-OAuth
 
 [![CI Status](https://img.shields.io/travis/Ethella/MagicExt-OAuth.svg?style=flat)](https://travis-ci.org/Ethella/MagicExt-OAuth)
